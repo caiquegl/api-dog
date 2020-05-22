@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste para emprego!</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+<body onload=listarRacas()>
+    <header class="container shadow">
+        <img src="https://dog.ceo/img/dog-api-logo.svg" alt="">
+        <h1>Desafio de recrutamento</h1>
+    </header>
+<main class="container shadow">
+    <div class="raca">
+        <label>Raça do Dog</label>
+        <select id="racas">
+        </select>
+    </div>
+    <div class="cor">
+        <label>Cor do texto</label>
+        <select id="cor">
+            <option value="black">Preto</option>
+            <option value="blue">Azul</option>
+            <option value="orange">Laranja</option>
+            <option value="pink">Rosa</option>
+            <option value="red">Vermelha</option>
+        </select>
+    </div>
+    <div class="nome">
+        <label for="">Nome cachorro</label>
+        <input type="text" id="novaTarefa">  
+    </div>
+    <div class="family">
+        <p>Estilo do texto</p>
+        
+        <select id="family">
+            <option value="">Normal</option>
+            <option value="'Amatic SC', cursive" style="font-family: 'Amatic SC', cursive;">Amatic SC</option>
+            <option value="'Lobster', cursive" style="font-family: 'Lobster', cursive;">Lobster</option>
+            <option value="'Sacramento', cursive" style="font-family: 'Sacramento', cursive;">Sacramento</option>
+            <option value="'DM Mono', monospace" style="font-family: 'DM Mono', monospace;">DM Mono</option>
+        </select>
+    </div>
+    <div class="enviar">
+        <button type="button" id="add" class="btn btn-info">Enviar</button>
+    </div>
+    <div class="corpo">
+        <div id="nomePet">
+
+        </div>
+        <div id="fotoPet">
+
+        </div>
+    </div>
+
+    <div class="salvar">
+        <button id="salvar" class="btn btn-info">Salvar pet</button>
+        <button id="salvar" onclick=excluir() class="btn btn-info">Excluir pet</button>
+    </div>
+</main>
+
+
+    <script src="./js/index.js"></script>
+
+    <footer class="container shadow">
+        <p>Espero que tenha gostado, ficarei feliz em fazer parte da sua equipe :)</p>
+    </footer>
+</body>
+</html>
